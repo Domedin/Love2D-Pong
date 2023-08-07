@@ -13,7 +13,7 @@ function Player:update(dt)
     self:constraints()
 end
 
-function Player:move()
+function Player:move(dt)
     if love.keyboard.isDown("w") then
         self.y = self.y - self.speed * dt
     elseif love.keyboard.isDown("s") then
